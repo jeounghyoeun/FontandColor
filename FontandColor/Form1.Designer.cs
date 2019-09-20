@@ -28,19 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tlsMenu = new System.Windows.Forms.ToolStrip();
+            this.tsbtnFont = new System.Windows.Forms.ToolStripButton();
+            this.tsbtnColor = new System.Windows.Forms.ToolStripButton();
             this.fontDlg = new System.Windows.Forms.FontDialog();
             this.colorDlg = new System.Windows.Forms.ColorDialog();
             this.rtbText = new System.Windows.Forms.RichTextBox();
-            this.tsbtnFont = new System.Windows.Forms.ToolStripButton();
-            this.tsbtnColor = new System.Windows.Forms.ToolStripButton();
             toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1.SuspendLayout();
             this.tlsMenu.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // toolStripStatusLabel1
+            // 
+            toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            toolStripStatusLabel1.Size = new System.Drawing.Size(140, 17);
+            toolStripStatusLabel1.Text = "3215 정효은 - 폰트 변경";
             // 
             // statusStrip1
             // 
@@ -64,15 +70,6 @@
             this.tlsMenu.TabIndex = 1;
             this.tlsMenu.Text = "toolStrip1";
             // 
-            // rtbText
-            // 
-            this.rtbText.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtbText.Location = new System.Drawing.Point(0, 25);
-            this.rtbText.Name = "rtbText";
-            this.rtbText.Size = new System.Drawing.Size(273, 194);
-            this.rtbText.TabIndex = 2;
-            this.rtbText.Text = resources.GetString("rtbText.Text");
-            // 
             // tsbtnFont
             // 
             this.tsbtnFont.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -81,6 +78,7 @@
             this.tsbtnFont.Name = "tsbtnFont";
             this.tsbtnFont.Size = new System.Drawing.Size(23, 22);
             this.tsbtnFont.Text = "toolStripButton1";
+            this.tsbtnFont.Click += new System.EventHandler(this.TsbtnFont_Click);
             // 
             // tsbtnColor
             // 
@@ -90,12 +88,16 @@
             this.tsbtnColor.Name = "tsbtnColor";
             this.tsbtnColor.Size = new System.Drawing.Size(23, 22);
             this.tsbtnColor.Text = "toolStripButton2";
+            this.tsbtnColor.Click += new System.EventHandler(this.TsbtnColor_Click);
             // 
-            // toolStripStatusLabel1
+            // rtbText
             // 
-            toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            toolStripStatusLabel1.Size = new System.Drawing.Size(140, 17);
-            toolStripStatusLabel1.Text = "3215 정효은 - 폰트 변경";
+            this.rtbText.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtbText.Location = new System.Drawing.Point(0, 25);
+            this.rtbText.Name = "rtbText";
+            this.rtbText.Size = new System.Drawing.Size(273, 194);
+            this.rtbText.TabIndex = 2;
+            this.rtbText.Text = resources.GetString("rtbText.Text");
             // 
             // Form1
             // 
